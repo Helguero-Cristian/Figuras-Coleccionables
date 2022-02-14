@@ -20,6 +20,21 @@ a {
 
 ul {
     list-style-type: none;
+    padding: 0rem;
+}
+
+/* bootstrap agrega margenes a los textos e imaganes */
+/* para reparar se llevo los valores de las etiquetas a 0 */
+figure {
+    margin: 0rem;
+}
+
+h3 {
+    margin: 0rem;
+}
+
+p {
+    margin: 0rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
@@ -410,7 +425,7 @@ ul {
         font-weight: 700;
         font-size: 1.5rem;
         text-transform: uppercase;
-        text-align: center;
+        text-align: center; 
     }
 
     .navbarFoo__menu {
@@ -430,6 +445,7 @@ ul {
         font-weight: 400;
         text-align: center;
     }
+
     .navbarFoo__menu a {
         transition: all 0.2s;
     }

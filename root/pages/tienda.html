@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Collector Store</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../assets/img/the-collector-favicon.png" type="image/x-icon">
+    <!-- iconos font awesome -->
+    <script src="https://kit.fontawesome.com/e3397bc159.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- menú navegable -->
+    <header id="navbar">
+        <a href="../index.html" class="navbar__logo">
+            <img src="../assets/img/the-collector-logo.png" alt="logo">
+        </a>
+        <nav class="navbar__menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="navbar__icons">
+            <div class="navbar__user">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+            </div>
+            <div class="navbar__bars">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- contenido principal -->
+    <main class="contentStore">
+        <!-- buscador -->
+        <section class="searchBar"> 
+            <form action="#" class="searchBar__Form">
+                <input type="search" placeholder="   Buscar producto..." class="searchBar__input">
+                <input type="submit" value="Buscar" class="searchBar__btn">
+            </form>
+        </section>
+        <!-- productos -->
+        <section class="pro">
+            <!-- filtros -->
+            <aside class="searchFilters">
+               <div class="searchFilters__price">
+                   <h3>Filtros</h3>
+                   <select name="ordenar">
+                       <option value="#">Ordenar por:</option>
+                       <option value="#">Precio: Menor a Mayor</option>
+                       <option value="#">Precio: Mayor a Menor</option>
+                       <option value="#">A - Z</option>
+                       <option value="#">Z - A</option>
+                       <option value="#">Más Nuevo al más Viejo</option>
+                       <option value="#">Más Viejo al más Nuevo</option>
+                       <option value="#">Más Vendido</option>
+                   </select>
+               </div>
+               <div class="searchFilters__brand">
+                   <h3>Marcas</h3>
+                   <ul>
+                       <li><a href="#">Hot Toys</a></li>
+                       <li><a href="#">Funko Pop</a></li>
+                       <li><a href="#">Sideshow</a></li>
+                       <li><a href="#">Kotobukiya</a></li>
+                       <li><a href="#">Banpresto</a></li>
+                       <li><a href="#">Hasbro</a></li>
+                       <li><a href="#">Iron Studios</a></li>
+                       <li><a href="#">Mezco</a></li>
+                       <li><a href="#">McFarlane</a></li>
+                       <li><a href="#">Neca</a></li>
+                       <li><a href="#">Bandai</a></li>
+                   </ul>
+               </div>
+           </aside>           
+            <!-- cards -->
+            <article class="pro__container">
+                <figure class="pro__image">
+                    <img src="../assets/img/sanit-seiya-pegasus.png" alt="product">
+                </figure>
+                <div class="pro__price">
+                    <h3>FunkoPop</h3>
+                    <p>Saint Seiya - Seiya de Pegaso</p>
+                    <p>$5.000</p>
+                </div>
+                <div class="pro__btn">
+                    <a href="#"><i class="fas fa-eye"></i>Detalles</a>
+                    <a href="#"><i class="fas fa-cart-arrow-down"></i>Comprar</a>
+                </div>
+            </article>
+            <!-- repetición de cards -->
+            <article class="pro__container pro__container--b">
+                <figure class="pro__image">
+                    <img src="../assets/img/saint-seiya-ikki.png" alt="product">
+                </figure>
+                <div class="pro__price">
+                    <h3>FunkoPop</h3>
+                    <p>Saint Seiya - Ikki de Fenix</p>
+                    <p>$4.000</p>
+                </div>
+                <div class="pro__btn">
+                    <a href="#"><i class="fas fa-eye"></i>Detalles</a>
+                    <a href="#"><i class="fas fa-cart-arrow-down"></i>Comprar</a>
+                </div>
+            </article>
+            <article class="pro__container pro__container--c">
+                <figure class="pro__image">
+                    <img src="../assets/img/saint-seiya-shiryu.png" alt="product">
+                </figure>
+                <div class="pro__price">
+                    <h3>FunkoPop</h3>
+                    <p>Saint Seiya - Shiryu de Dragon</p>
+                    <p>$4.000</p>
+                </div>
+                <div class="pro__btn">
+                    <a href="#"><i class="fas fa-eye"></i>Detalles</a>
+                    <a href="#"><i class="fas fa-cart-arrow-down"></i>Comprar</a>
+                </div>
+            </article>
+            <article class="pro__container pro__container--d">
+                <figure class="pro__image">
+                    <img src="../assets/img/saint-seiya-hyoga.png" alt="product">
+                </figure>
+                <div class="pro__price">
+                    <h3>FunkoPop</h3>
+                    <p>Saint Seiya - Hyoga de Cisne</p>
+                    <p>$4.000</p>
+                </div>
+                <div class="pro__btn">
+                    <a href="#"><i class="fas fa-eye"></i>Detalles</a>
+                    <a href="#"><i class="fas fa-cart-arrow-down"></i>Comprar</a>
+                </div>
+            </article>
+            <article class="pro__container pro__container--e">
+                <figure class="pro__image">
+                    <img src="../assets/img/saint-seiya-shun.png" alt="product">
+                </figure>
+                <div class="pro__price">
+                    <h3>FunkoPop</h3>
+                    <p>Saint Seiya - Shun de Andromeda</p>
+                    <p>$5.000</p>
+                </div>
+                <div class="pro__btn">
+                    <a href="#"><i class="fas fa-eye"></i>Detalles</a>
+                    <a href="#"><i class="fas fa-cart-arrow-down"></i>Comprar</a>
+                </div>
+            </article>
+            <article class="pro__container pro__container--f">
+                <figure class="pro__image">
+                    <img src="../assets/img/frieza-dragonball.png" alt="product">
+                </figure>
+                <div class="pro__price">
+                    <h3>Tamashii Nation</h3>
+                    <p>Dragon Ball Z - Freezer</p>
+                    <p>$6.000</p>
+                </div>
+                <div class="pro__btn">
+                    <a href="#"><i class="fas fa-eye"></i>Detalles</a>
+                    <a href="#"><i class="fas fa-cart-arrow-down"></i>Comprar</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- pie de página -->
+    <footer>
+        <!-- flecha -->
+        <section class="navbarFoo__circle">
+            <div class="navbarFoo__arrow">
+                <a href="#navbar">
+                    <i class="fas fa-sort-up"></i>
+                </a>
+            </div>
+        </section>        
+        <section class="navbarFoo">
+            <!-- menu navegable -->
+            <div class="navbarFoo__menu">
+                <h2 class="navbarFoo__title">Navegación</h2>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="noticias.html">Noticas</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- contacto -->
+            <div class="navbarFoo__contact">
+                <h2 class="navbarFoo__title">Contactanos</h2>
+                <ul>
+                    <li>Av. Hipólito Yrigoyen 4600 - Lanús</li>
+                    <li>sectorventas@collector.com</li>
+                    <li>+54-011-0303-0456</li>
+                </ul>
+            </div>
+            <!-- subscripción -->
+            <div class="navbarFoo__sub">
+                <h2 class="navbarFoo__title">Newsletter</h2>
+                <form action="#">
+                    <input type="email" placeholder="Ingrese su mail..." class="navbarFoo__mail">
+                    <input type="submit" value="Suscribirse" class="navbarFoo__btn">
+                </form>
+            </div>
+            <!-- redes sociales -->
+            <div class="navbarFoo__rrss">
+                <h2 class="navbarFoo__title">Seguinos en las redes</h2>
+                <div class="navbarFoo__icons">
+                    <a href="https://es-la.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- copyright -->
+        <section class="copyright">
+            <p>© 2022 - Helguero Cristian </p>
+        </section>
+    </footer>
+</body>
+
+</html>    

@@ -82,11 +82,25 @@ ul {
     }
 
     /* bienvenida */
+    /* bienvenida */
     .cover {
         display: flex;
         flex-flow: column nowrap;
         margin: 50px 30px;
         align-items: center;
+        animation-name: cover__a;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: initial;
+    }
+
+    @keyframes cover__a {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .cover__description {
@@ -99,6 +113,22 @@ ul {
         width: 100%;
         height: auto;
         padding-bottom: 30px;
+        animation-name: stars__a;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes stars__a {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
     }
 
     .cover__path {

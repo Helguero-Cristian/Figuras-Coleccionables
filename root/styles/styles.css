@@ -603,7 +603,20 @@ ul {
         "pro__e"
         "pro__f";
         grid-row-gap: 30px;
-        justify-content: center;        
+        justify-content: center;
+        animation-name: product__a;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: initial;        
+    }
+
+    @keyframes product__a {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .pro__container {
@@ -785,6 +798,19 @@ ul {
         align-items: center;
         padding-top: 25px;
         transition: all 0.5s;
+        animation-name: about__a;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes about__a {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 
     .aboutUs__container:hover {

@@ -51,49 +51,109 @@ p {
 /* 1280x950 - PC */
 /* 1920x1080 - EXTRA PC FULL HD */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px){
     /* ---------- INDEX ---------- */
     /* menú navegable */
     #navbar {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgba(89, 37, 32, 0.15);
-        backdrop-filter: blur(5px);
-        border-bottom: 1px solid rgba(89, 37, 32, 0.3);
         top: 0px;
         position: sticky;
         z-index: 100;
     }
 
-    .navbar__logo {
-        margin: 15px 50px 15px 50px;
+    .navbar {
+        padding: 15px 50px;
+        background-color: rgba(89, 37, 32, 0.15);
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(89, 37, 32, 0.3);
     }
 
-    .navbar__logo img {
+    .container-fluid {
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar-brand img {
         width: 100%;
+        max-width: 218px;
         height: auto;
     }
 
-    .navbar__menu {
-        display: none;
+    .navbar-nav {
+        border-top: 1px solid rgba(89, 37, 32, 0.5);
+        padding-top: 1rem;
+        margin-top: 15px;
     }
 
-    .navbar__icons {
+    .navbar-nav li {
+        font-family: "Saira", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* padding: 0.5rem 3rem; */
+        padding: 0.5rem 0rem;
+    }
+
+    .navbar-nav a {
+        color: #F2F2EB;
+    }
+
+    .navbar-nav a:hover{
+        border-bottom: 3px solid #FFA053;
+        color: #FFA053;
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .fa-user, .fa-shopping-cart {
+        font-size: 1rem;
+        padding-left: 2rem;
+        color: white;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 1rem;
+    }
+
+    .navbar__user {
         display: flex;
         flex-flow: row nowrap;
-        margin: 15px 50px 15px 50px;
+        align-items: center;
+        border-left: 1px solid white;
+        margin-left: 2rem;
     }
 
-    .navbar__user{
-        display: none;
+    .navbar-toggler {
+        padding: 0px;
     }
 
-    .fa-bars
-    {
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .btn {
+        color: #FF781E;
+        border-color: #FF781E;
+        padding: 0.5rem;
+    }
+    
+    .btn:hover {
         color: white;
-        font-size: 1.5rem;
+        border-color: #FF781E;
+        background-color: #FF781E;
+    }
+
+    .form-control:focus {
+        color: black;
+        border-color: #FFA053;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba(255 120 30 / 25%);
     }
 
     /* bienvenida */
@@ -314,7 +374,7 @@ p {
         align-items: center;  
     }
     
-    .proDes__btn a {
+    .proDes__btn button {
         font-family: "Saira", sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
@@ -323,17 +383,18 @@ p {
         height: 50px;
         color: white;
         background-color: #FFA053;
+        border: none;
         transition: all 0.5s;
     }
 
-    .proDes__btn a:hover {
+    .proDes__btn button:hover {
         background-color: #FF781E;
     }
     
     .fa-eye, 
     .fa-cart-arrow-down {
         color: white;
-        padding: 15px 20px 10px 30px;
+        padding-right: 20px;
     }
 
     /* información */
@@ -705,7 +766,7 @@ p {
         align-items: center;
     }
     
-    .pro__btn a {
+    .pro__btn button {
         font-family: "Saira", sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
@@ -714,13 +775,38 @@ p {
         height: 50px;
         color: white;
         background-color: #FFA053;
+        border: none;
         transition: all 0.5s;
     }
 
-    .pro__btn a:hover {
+
+    .pro__btn button:hover {
+        background-color: #FF781E;
+    }
+
+    .pag__store {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .page-link {
+        background-color: #FFA053;
+        color: white;
+        border: 1px solid #592520;
+    }
+
+    .page-link--color {
         background-color: #FF781E;
     }
     
+    .page-link:hover {
+        background-color: #F2F2EB;
+        color: #261210;
+        transform: scale(1.1,1.1);
+        border: none;
+    }
+
     /* ---------- NOTICIAS ---------- */
     /* reviews */
     .contentNews {
@@ -935,22 +1021,8 @@ p {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     /* ---------- INDEX ---------- */
-    /* menú navegable */
-    .navbar__user, 
-    .navbar__bars {
-        display: contents;
-    }
-
-    .fa-bars,
-    .fa-user,
-    .fa-shopping-cart {
-        color: white;
-        font-size: 1.2rem;
-        padding-left: 2rem;
-    }
-
     /* bienvenida */
     .cover {
         display: grid;
@@ -1072,32 +1144,18 @@ p {
 @media screen and (min-width: 1280px) {
     /* ---------- INDEX ---------- */
     /* menú navegable */
-    .navbar__menu {
-        display: contents;
-    }
-    
-    .navbar__menu ul {
-        display: flex;
-        flex-flow: row nowrap;
+    .navbar-nav {
+        border: none;
+        padding-top: 0rem;
+        margin-top: 0px;
     }
 
-    .navbar__menu ul a {
+    .navbar-nav li {
         font-family: "Saira", sans-serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: #F2F2EB;
-        padding: 1.5rem;
-        transition: all 0.2s;
-    }
-
-    .navbar__menu ul a:hover {
-        color: #FF781E;
-    }
-
-
-    .navbar__bars {
-        display: none;
+        padding: 0.5rem 1rem;
     }
 
     /* bienvenida */
@@ -1245,15 +1303,14 @@ p {
 @media screen and (min-width: 1920px) {
     /* ---------- INDEX ---------- */
     /* menú navegable */
-    .navbar__menu ul a {
+    .navbar-nav li {
         font-family: "Saira", sans-serif;
         font-size: 1.2rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: #F2F2EB;
-        padding: 3rem;
+        padding: 0.5rem 3rem;
     }
-    
+
     /* bienvenida */
     .cover__title {
         font-size: 5rem;

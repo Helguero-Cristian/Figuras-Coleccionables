@@ -1,0 +1,133 @@
+@import "_colores";
+
+/* ---------- NOTICIAS ---------- */
+/* reviews */
+.contentNews {
+    padding: 50px 0px;
+
+    .news {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "article__a"
+        "article__b";
+        grid-row-gap: 30px;
+        padding-top: 50px;
+
+        .newsContainer {
+            grid-area: article__a;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: $blanco__transparente;
+            backdrop-filter: blur(5px);
+            border-top: $bordeBlanco__transparente;
+            border-bottom: $bordeBlanco__transparente;
+            padding: 30px 0px;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.05,1.05);
+            }
+
+            .newsContainer__video {
+                
+                iframe {
+                    width: 420px;
+                    height: 240px;
+                    margin: 0px 30px;
+                }
+            }
+
+            .newsContainer__text {
+                font-family: "Saira", sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+                margin: 15px 30px;
+                color: white;
+                text-align: justify;
+                overflow: auto;
+
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 25px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .newsContainer--b {
+            grid-area: article__b;
+        }
+    }
+}
+
+/* ---------- CONTACTO ---------- */
+/* formulario */
+.contentContact {
+    margin: 100px 0px;
+
+    .contact {
+        background-color: $blanco__transparente;
+        backdrop-filter: blur(5px);
+        border: $bordeBlanco__transparente;
+        
+        .contactConteiner {
+            display: flex;
+            justify-content: center;
+
+            form {
+                display: flex;
+                flex-flow: column wrap;
+                font-family: "Saira", sans-serif;
+                color: white;
+                font-size: 1rem;
+                font-weight: 400;
+                padding: 50px 0px;
+                width: 75%;
+
+                input {
+                    padding: 10px;
+                    margin-bottom: 10px;
+
+                    &:focus {
+                        box-shadow: 0px 0px 5px 5px $marron__claro;
+                    }
+                }
+
+                textarea {
+                    resize: vertical;
+                    font-family: "Saira", sans-serif;
+                    padding: 10px;
+                    height: 250px;
+                }
+
+                .contactConteiner__btn {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: start;
+                    margin-top: 25px;
+
+                    .contactConteiner__btn--enviar, 
+                    .contactConteiner__btn--limpiar {
+                        border: 0;
+                        background-color: $naranja__claro;
+                        color: white;
+                        margin-right: 25px;
+
+                        &:hover{
+                            background-color: $naranja__claro;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

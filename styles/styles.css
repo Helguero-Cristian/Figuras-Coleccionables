@@ -809,7 +809,7 @@ p {
 
     /* ---------- NOTICIAS ---------- */
     /* reviews */
-    .contentNews {
+    /* .contentNews {
         padding: 50px 0px;
     }
     
@@ -867,7 +867,7 @@ p {
         text-transform: uppercase;
         margin-bottom: 25px;
         text-align: left;
-    }
+    } */
 
     /* ---------- NOSOTROS ---------- */
     /* staff */
@@ -958,7 +958,7 @@ p {
 
     /* ---------- CONTACTO ---------- */
     /* formulario */
-    .contentContact {
+    /* .contentContact {
         margin: 100px 0px;
     }
     
@@ -1018,7 +1018,7 @@ p {
     .contactConteiner__btn--enviar:hover, 
     .contactConteiner__btn--limpiar:hover {
         background-color: #FF781E;
-    }
+    } */
 }
 
 @media screen and (min-width: 768px){

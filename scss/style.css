@@ -88,8 +88,8 @@
     padding-left: 2rem;
     color: white;
   }
+  /* bienvenida */
   .content {
-    /* bienvenida */
     /* productos destacados */
     /* información */
   }
@@ -178,8 +178,9 @@
     font-weight: 400;
     color: white;
     text-align: center;
+    display: inline-block;
   }
-  .content .cover .cover__description .cover__text .cover__text--italic {
+  .content .cover .cover__description .cover__text h1 .cover__text--italic {
     font-weight: 700;
     font-style: italic;
   }
@@ -347,7 +348,6 @@
   }
   /* pie de página */
   footer {
-    /* flecha */
     /* grilla pie de página */
   }
   footer .navbarFoo__circle {
@@ -356,6 +356,7 @@
     justify-content: center;
     position: relative;
     bottom: -50px;
+    /* flecha */
   }
   footer .navbarFoo__circle .navbarFoo__arrow {
     width: 100px;
@@ -986,8 +987,8 @@
     text-transform: uppercase;
     padding: 0.5rem 1rem;
   }
+  /* bienvenida */
   .content {
-    /* bienvenida */
     /* productos destacados */
     /* información */
   }

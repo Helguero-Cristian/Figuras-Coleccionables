@@ -29,6 +29,14 @@ figure {
     margin: 0rem;
 }
 
+h1 {
+    margin: 0rem;
+    font-size: 0;
+    line-height: 2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
 h3 {
     margin: 0rem;
 }

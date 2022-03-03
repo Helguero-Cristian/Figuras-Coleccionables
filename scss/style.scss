@@ -128,8 +128,9 @@ $mapatipo: (
         }
     }
 
+    /* bienvenida */
     .content {
-        /* bienvenida */
+
         .cover {
             display: flex;
             flex-flow: column nowrap;
@@ -227,10 +228,14 @@ $mapatipo: (
                     text-transform: map-get($mapatipo, mayuscula);
                     color: white;
                     text-align: center;
-    
-                    .cover__text--italic {
-                        font-weight: 700;
-                        font-style: italic;
+                    display: inline-block;
+                    
+                    h1 {
+                        
+                        .cover__text--italic {
+                            font-weight: 700;
+                            font-style: italic;
+                        }
                     }
                 }
             }
@@ -447,14 +452,14 @@ $mapatipo: (
     /* pie de página */
     footer {
     
-        /* flecha */
         .navbarFoo__circle {
             display: flex;
             flex-flow: row nowrap;
             justify-content: center;
             position: relative;
             bottom: -50px;
-    
+            
+            /* flecha */
             .navbarFoo__arrow {
                 width: 100px;  
                 height: 100px;
@@ -1085,6 +1090,7 @@ $mapatipo: (
     /* ---------- INDEX ---------- */
     /* bienvenida */
     .content {
+
         .cover {
             display: grid;
             grid-template-columns: repeat(2, auto);
@@ -1257,8 +1263,9 @@ $mapatipo: (
             }
         }
     }   
+
+    /* bienvenida */
     .content {
-        /* bienvenida */
         .cover {
             display: grid;
             grid-template-columns: repeat(3, auto);

@@ -3,12 +3,12 @@
 /* breakpoints */
 $celular: 480px;
 $tablet: 768px;
-$pc: 1280px;
+$pc: 1200px;
 $full: 1920px;
 
 /* mapa para funcion map-get */
 $mapatipo: (
-    saira: "Saira", sans-serif
+    saira: "Saira",
     mayuscula: uppercase,
     regular: 400,
     bold: 700
@@ -298,7 +298,7 @@ $mapatipo: (
                 flex-flow: column wrap;
     
                 .proDes__image {
-                    width: 400px;
+                    width: 300px;
                     height: 400px;
                     background: $blanco__transparente;
                     backdrop-filter: blur(5px);
@@ -309,7 +309,7 @@ $mapatipo: (
                     align-items: center;
     
                     img {
-                        width: 300px;
+                        width: 250px;
                         height: auto;
                         transition: all 0.5s;
     
@@ -320,7 +320,7 @@ $mapatipo: (
                 }
     
                 .proDes__price {
-                    width: 400px;
+                    width: 300px;
                     height: 120px;
                     display: flex;
                     flex-direction: column;
@@ -328,7 +328,7 @@ $mapatipo: (
                     justify-content: center;
                     background-color: $blanco;
                     font-family: map-get($mapatipo, saira);
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     font-weight: 400;
                     color: $marron__oscuro;
                     z-index: 5;
@@ -353,10 +353,10 @@ $mapatipo: (
 
                     .btn__normal {
                         font-family: map-get($mapatipo, saira);
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-weight: 700;
                         text-transform: map-get($mapatipo, mayuscula);
-                        @include sizeboton(200px, 50px);
+                        @include sizeboton(150px, 50px);
                         color: white;
                         background-color: $naranja__claro;
                         border: none;
@@ -368,7 +368,7 @@ $mapatipo: (
     
                         i {
                             color: white;
-                            padding-right: 20px;
+                            padding-right: 10px;
                         }
                     }
                 }
@@ -749,7 +749,7 @@ $mapatipo: (
                 grid-area: pro__a;
                 display: flex;
                 flex-flow: column nowrap;
-                width: 400px;
+                width: 300px;
                 height: auto;
     
                 @keyframes product__a {
@@ -762,7 +762,7 @@ $mapatipo: (
                 }
     
                 .pro__image {
-                    width: 400px;
+                    width: 300px;
                     height: 400px;
                     background: $blanco__transparente;
                     backdrop-filter: blur(5px);
@@ -773,7 +773,7 @@ $mapatipo: (
                     align-items: center;
     
                     img {
-                        width: 300px;
+                        width: 250px;
                         height: auto;
                         transition: all 0.5s;
     
@@ -784,7 +784,7 @@ $mapatipo: (
                 }
     
                 .pro__price {
-                    width: 400px;
+                    width: 300px;
                     height: 120px;
                     display: flex;
                     flex-direction: column;
@@ -792,7 +792,7 @@ $mapatipo: (
                     justify-content: center;
                     background-color: $blanco;
                     font-family: "Saira", sans-serif;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     font-weight: 400;
                     color: $marron__oscuro;
                     padding-left: 30px;
@@ -805,7 +805,7 @@ $mapatipo: (
     
                     button {
                         font-family: "Saira", sans-serif;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-weight: 700;
                         text-transform: uppercase;
                         width: 200px;
@@ -817,6 +817,11 @@ $mapatipo: (
     
                         &:hover {
                             background-color: $naranja__oscuro;
+                        }
+
+                        i {
+                            color: white;
+                            padding-right: 10px;
                         }
                     }
                 }
@@ -1255,7 +1260,7 @@ $mapatipo: (
                                 font-size: 1rem;
                                 font-weight: 700;
                                 text-transform: uppercase;
-                                padding: 0.5rem 1rem;
+                                padding: 0.5rem 0.75rem;
                             }
                         }
                     }

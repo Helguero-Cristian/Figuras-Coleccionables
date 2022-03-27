@@ -47,6 +47,7 @@
     font-family: "Saira";
     font-size: 1.2rem;
     font-weight: 700;
+    text-transform: uppercase;
     /* padding: 0.5rem 3rem; */
     padding: 0.5rem 0rem;
   }
@@ -176,6 +177,7 @@
     font-family: "Saira";
     font-size: 1.2rem;
     font-weight: 400;
+    text-transform: uppercase;
     color: white;
     text-align: center;
     display: inline-block;
@@ -232,7 +234,7 @@
     flex-flow: column wrap;
   }
   .content .proDes .proDes__container .proDes__image {
-    width: 400px;
+    width: 300px;
     height: 400px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
@@ -243,7 +245,7 @@
     align-items: center;
   }
   .content .proDes .proDes__container .proDes__image img {
-    width: 300px;
+    width: 250px;
     height: auto;
     transition: all 0.5s;
   }
@@ -251,7 +253,7 @@
     transform: scale(1.2, 1.2);
   }
   .content .proDes .proDes__container .proDes__price {
-    width: 400px;
+    width: 300px;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -259,7 +261,7 @@
     justify-content: center;
     background-color: #F2F2EB;
     font-family: "Saira";
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #261210;
     z-index: 5;
@@ -277,9 +279,10 @@
   }
   .content .proDes .proDes__container .proDes__btn .btn__normal, .content .proDes .proDes__container .proDes__container__two .proDes__btn .btn__ext, .content .proDes .proDes__container__two .proDes__container .proDes__btn .btn__ext, .content .proDes .proDes__container .proDes__container__three .proDes__btn .btn__ext, .content .proDes .proDes__container__three .proDes__container .proDes__btn .btn__ext {
     font-family: "Saira";
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
-    width: 200px;
+    text-transform: uppercase;
+    width: 150px;
     height: 50px;
     color: white;
     background-color: #FFA053;
@@ -291,7 +294,7 @@
   }
   .content .proDes .proDes__container .proDes__btn .btn__normal i, .content .proDes .proDes__container .proDes__container__two .proDes__btn .btn__ext i, .content .proDes .proDes__container__two .proDes__container .proDes__btn .btn__ext i, .content .proDes .proDes__container .proDes__container__three .proDes__btn .btn__ext i, .content .proDes .proDes__container__three .proDes__container .proDes__btn .btn__ext i {
     color: white;
-    padding-right: 20px;
+    padding-right: 10px;
   }
   .content .proDes .proDes__container__two {
     grid-area: card__two;
@@ -345,6 +348,7 @@
   .content .info .info__work .info__container .info__title {
     font-size: 1.5rem;
     font-weight: 700;
+    text-transform: uppercase;
   }
   /* pie de página */
   footer {
@@ -393,6 +397,7 @@
     font-family: "Saira";
     font-weight: 700;
     font-size: 1.5rem;
+    text-transform: uppercase;
     text-align: center;
   }
   footer .navbarFoo .navbarFoo__menu ul {
@@ -418,6 +423,7 @@
     font-family: "Saira";
     font-weight: 700;
     font-size: 1.5rem;
+    text-transform: uppercase;
     text-align: center;
   }
   footer .navbarFoo .navbarFoo__contact ul {
@@ -439,6 +445,7 @@
     font-family: "Saira";
     font-weight: 700;
     font-size: 1.5rem;
+    text-transform: uppercase;
     text-align: center;
   }
   footer .navbarFoo .navbarFoo__sub form {
@@ -473,6 +480,7 @@
     font-family: "Saira";
     font-weight: 700;
     font-size: 1.5rem;
+    text-transform: uppercase;
     text-align: center;
   }
   footer .navbarFoo .navbarFoo__rrss .navbarFoo__icons {
@@ -588,7 +596,7 @@
     grid-area: pro__a;
     display: flex;
     flex-flow: column nowrap;
-    width: 400px;
+    width: 300px;
     height: auto;
   }
   @keyframes product__a {
@@ -600,7 +608,7 @@
     }
   }
   .contentStore .pro .pro__container .pro__image {
-    width: 400px;
+    width: 300px;
     height: 400px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
@@ -611,7 +619,7 @@
     align-items: center;
   }
   .contentStore .pro .pro__container .pro__image img {
-    width: 300px;
+    width: 250px;
     height: auto;
     transition: all 0.5s;
   }
@@ -619,7 +627,7 @@
     transform: scale(1.2, 1.2);
   }
   .contentStore .pro .pro__container .pro__price {
-    width: 400px;
+    width: 300px;
     height: 120px;
     display: flex;
     flex-direction: column;
@@ -627,7 +635,7 @@
     justify-content: center;
     background-color: #F2F2EB;
     font-family: "Saira", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #261210;
     padding-left: 30px;
@@ -639,7 +647,7 @@
   }
   .contentStore .pro .pro__container .pro__btn button {
     font-family: "Saira", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     width: 200px;
@@ -651,6 +659,10 @@
   }
   .contentStore .pro .pro__container .pro__btn button:hover {
     background-color: #FF781E;
+  }
+  .contentStore .pro .pro__container .pro__btn button i {
+    color: white;
+    padding-right: 10px;
   }
   .contentStore .pro .pro__container--b {
     grid-area: pro__b;
@@ -972,7 +984,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   /* ---------- INDEX ---------- */
   /* menú navegable */
   #navbar .navbar .container-fluid .collapse .navbar-nav {
@@ -985,7 +997,7 @@
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.75rem;
   }
   /* bienvenida */
   .content {
